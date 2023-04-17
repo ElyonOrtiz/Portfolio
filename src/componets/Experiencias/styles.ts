@@ -9,18 +9,22 @@ export const Container = styled.section`
     display: flex;
     gap: 1rem;
 
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
     border-bottom: 3px splid ${({ theme }) => theme.primary};
 
     @media (max-width: 1000px) {
       gap: 1.5rem;
       flex-direction: column;
+      padding-bottom: 3rem;
+      margin-top: 5rem;
     }
 
     @media (max-width: 700px) {
       flex-direction: column;
       margin-top: 5rem;
+      padding-bottom: 1rem;
       gap: 2rem;
+      margin-top: 2rem;
     }
   }
 `;
