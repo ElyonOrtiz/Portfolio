@@ -9,7 +9,7 @@ import { Container } from './styles';
 export function Conhecimentos() {
   return (
     <Container>
-      <SectionTitle title="conhecimentos"/>
+      <SectionTitle title="Conhecimentos"/>
       <section>
         <ConhecimentoItem title='HTML' icon={<AiFillHtml5/>}/>
         <ConhecimentoItem title='CSS'  icon={<FaCss3Alt/>}/>

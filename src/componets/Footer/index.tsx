@@ -4,8 +4,11 @@ import {
   AiOutlineLinkedin,
 } from 'react-icons/ai';
 
-function handleScrollTop {
-  wi
+function handleScrollTop() {
+  window.scroll({
+    top: 0,
+    behavior:'smooth',
+  })
 }
 
 
@@ -16,7 +19,7 @@ export function Footer() {
   return (
     <Container>
       <div className='container'>
-        <button>
+        <button type='button' onClick={handleScrollTop}>
           Voltar ao topo
         </button>
         <section>

@@ -11,6 +11,9 @@ export const Container = styled.section`
     flex-direction: column;
     align-items: center;
     gap: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid ${({theme}) => theme.backgroundLight};
+
 
     > section{
         width: 100%;
@@ -24,7 +27,7 @@ export const Container = styled.section`
     }
 
     > button {
-        background: ${({ theme }) => theme.primary};
+        background: ${({ theme }) => darken(0.1, theme.primary)};
         padding: 0.8rem 3rem;
         border-radius: 0.5rem;
         border: none;
@@ -37,9 +40,9 @@ export const Container = styled.section`
             text-transform: uppercase;
             color: #fff;
             font-size: 1.15rem;
-            font-weight: 300;
+            font-weight: 700;
         }
-        
+
         @media(max-width: 500px){
             padding: 1rem;
             a {
@@ -70,7 +73,7 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
             color: ${({theme}) => theme.primary};
         }
     }
-    
+
 
     > button {
         height: 4rem;
@@ -86,10 +89,7 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
             align-items: center;
             gap: 0.8rem;
             transition: 0.5s;
-
-
         }
-
     }
 
     > section  {
@@ -116,8 +116,8 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
             right: -7rem;
             transition: 0.5s;
             width: fit-content;
-            
-            
+
+
 
             h1{
                 color: ${({theme}) => theme.primary};
@@ -163,7 +163,7 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
     @media(max-width: 1000px){
         > section {
             width: 100%;
-            
+
             div.text{
                 left: 1rem;
                 top: 1rem;
@@ -182,13 +182,13 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
 
             > section {
             width: 100%;
-            
+
                  div.text{
                      left: 1rem;
                      top: 1rem;
                  }
             }
-        
+
             > button {
             position: absolute;
             bottom: 1rem;
@@ -225,8 +225,8 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
                font-size: 1rem;
                 }
             }
-           
+
         }
-       
+
     }
 `;

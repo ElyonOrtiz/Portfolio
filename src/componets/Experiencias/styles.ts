@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100%;
-  
+  padding-top: 2rem;
+  border-top: 1px solid ${({theme}) => theme.backgroundLight};
   > section {
     width: 100%;
     margin-top: 7rem;
@@ -41,13 +42,14 @@ export const ItemContainer = styled.div`
     justify-content: flex-start;
     transition: 0.5s;
 
+
     h1{
       color: ${({ theme }) => theme.primary};
       font-size: 2rem;
       margin-bottom: 1.5rem;
 
     }
-    
+
     h2{
       color: ${({ theme }) => theme.secondary};
       font-size: 1.5rem;
@@ -80,7 +82,7 @@ export const ItemContainer = styled.div`
     > div {
       height: auto;
       padding-top: 1.5rem;
-      
+
     h1{
       font-size: 1.2rem;
       margin-bottom: 1rem;
@@ -92,10 +94,10 @@ export const ItemContainer = styled.div`
     p {
       font-size: 0.9rem;
     }
-    
+
   }
   }
-  
+
   @media (max-width: 700px) {
     &:nth-child(even) > div {
       margin-top: 0;
@@ -108,7 +110,7 @@ export const ItemContainer = styled.div`
     > div {
       height: auto;
       padding-top: 2rem;
-    
+
     h1{
       font-size: 2rem;
     }
